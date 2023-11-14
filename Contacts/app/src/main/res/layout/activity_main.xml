@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#373737"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.activities.MainActivity">
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:paddingLeft="20dp"
+        android:ems="18"
+        android:inputType="text"
+        android:autofillHints="text"
+        android:textColorHint="#939393"
+        android:backgroundTint="#00BCDE"
+        android:textColor="@color/black"
+        android:hint="@string/searchHint"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/item_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="520dp"
+        android:layout_marginTop="20dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="4"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#009ECD"
+        android:layout_marginTop="10dp"
+        android:text="@string/addButtonText"
+        />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

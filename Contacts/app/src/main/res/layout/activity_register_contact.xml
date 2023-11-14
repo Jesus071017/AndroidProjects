@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#2C2C2C"
+    tools:context=".ui.activities.RegisterContact">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor = "@color/white"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:text="@string/registerTitle" />
+
+    <EditText
+        android:id="@+id/namesReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="15"
+        android:inputType="text"
+        android:backgroundTint="#00BCDE"
+        android:textColor="@color/white"
+        android:hint="@string/namesHint"
+        android:textColorHint="#C4C4C4"
+        android:paddingLeft="10dp"
+        />
+
+    <EditText
+        android:id="@+id/lastNamesReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="15"
+        android:inputType="text"
+        android:backgroundTint="#00BCDE"
+        android:textColor="@color/white"
+        android:hint="@string/lastNamesHint"
+        android:textColorHint="#C4C4C4"
+        android:paddingLeft="10dp"/>
+
+    <EditText
+        android:id="@+id/phoneReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="15"
+        android:inputType="phone"
+        android:backgroundTint="#00BCDE"
+        android:textColor="@color/white"
+        android:hint="@string/phoneHint"
+        android:textColorHint="#C4C4C4"
+        android:paddingLeft="10dp"/>
+
+    <EditText
+        android:id="@+id/emailReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="15"
+        android:inputType="textEmailAddress"
+        android:backgroundTint="#00BCDE"
+        android:textColor="@color/white"
+        android:hint="@string/emailHint"
+        android:textColorHint="#C4C4C4"
+        android:paddingLeft="10dp"/>
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#00BCDE"
+        android:text="@string/textButtonRegister" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Contacts</string>
+    <string name="searchHint">Search</string>
+    <string name="addButtonText">Add user</string>
+    <string name="registerTitle">Add contact</string>
+    <string name="namesHint">Names</string>
+    <string name="lastNamesHint">Last names</string>
+    <string name="phoneHint">Phone</string>
+    <string name="emailHint">Email</string>
+    <string name="textButtonRegister">Add contact</string>
+    <string name="namesRequired">The field Names is required.</string>
+    <string name="lastNamesRequired">The field Last names is required.</string>
+    <string name="phoneRequired">The field Phone is required.</string>
+    <string name="emailRequired">The field Email is required.</string>
+    <string name="badEmail">The entered email is invalid.</string>
+    <string name="successRegister">Data registered successfully.</string>
+    <string name="updateTitle">Update data</string>
+    <string name="successUpdate">Data updated successfully.</string>
+    <string name="textButtonUpdate">Update data</string>
+</resources>
