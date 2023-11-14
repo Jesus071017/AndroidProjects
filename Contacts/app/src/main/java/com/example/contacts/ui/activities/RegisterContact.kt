@@ -1,5 +1,6 @@
 package com.example.contacts.ui.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -49,7 +50,8 @@ class RegisterContact : AppCompatActivity() {
                 phoneInput.setText("")
                 emailInput.setText("")
 
-                contactViewModel.getAllContacts()
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
 
                 Common.showToast(this, R.string.successRegister)
             }

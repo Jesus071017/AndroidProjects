@@ -33,15 +33,9 @@ class MainActivity : AppCompatActivity() {
 
         val search = findViewById<EditText>(R.id.search)
         val addButton = findViewById<Button>(R.id.button)
-        val updButton = adapter.findViewById<Button>(R.id.card_view)
 
         addButton.setOnClickListener {
             val intent = Intent(this, RegisterContact::class.java)
-            startActivity(intent)
-        }
-
-        updButton.setOnClickListener {
-            val intent = Intent(this, UpdateContact::class.java)
             startActivity(intent)
         }
     }
