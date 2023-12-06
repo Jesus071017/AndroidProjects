@@ -1,18 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.activity.shared.MainActivity"
+    android:background="@drawable/top"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="50dp">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/sign_in_title"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:layout_marginBottom="50dp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Input"
+        app:startIconDrawable="@drawable/user"
+        android:layout_marginBottom="17dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:hint="@string/username_hint" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Input"
+        app:startIconDrawable="@drawable/key"
+        app:endIconMode="password_toggle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/sign_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/sign_in_title"
+        android:backgroundTint="#8028D8"
+        android:textColor="@color/white"
+        app:cornerRadius="20dp"
+        android:layout_marginTop="60dp"/>
+
+    <Button
+        android:id="@+id/sign_up_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        style="?attr/materialButtonOutlinedStyle"
+        app:cornerRadius="20dp"
+        app:strokeColor="#8028D8"
+        android:text="@string/sign_up_title"
+        android:textColor="#8028D8" />
+
+</LinearLayout>
